@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="form表单上送"
+        app:layout_constraintBottom_toTopOf="@id/postString"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/postString"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="字符串上送"
+        app:layout_constraintBottom_toTopOf="@id/postFile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form" />
+    <Button
+        android:id="@+id/postFile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="文件上传"
+        app:layout_constraintBottom_toTopOf="@id/getFile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/postString" />
+    <Button
+        android:id="@+id/getFile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="文件下载"
+        app:layout_constraintBottom_toTopOf="@id/form_and_File"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/postFile" />
+    <Button
+        android:id="@+id/form_and_File"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="form表单和文件上传"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getFile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
